@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Grid Generator</h1>
+    </header>
+
+    <div class="page-content">
+      <div class="container">
+        <div class="settings-panel">
+          <div class="input-group">
+            <label for="bgColor">Background Color</label>
+            <input type="color" id="bgColor" value="#000000" />
+          </div>
+
+          <div class="input-group">
+            <label for="gridColor">Grid Color</label>
+            <input type="color" id="gridColor" value="#ffffff" />
+          </div>
+
+          <div class="input-group">
+            <label for="gridSize">Grid Size (px)</label>
+            <input type="number" id="gridSize" value="300" min="1" />
+          </div>
+
+          <div class="input-group">
+            <label for="lineWidth">Line Width (px)</label>
+            <input type="number" id="lineWidth" value="5" min="1" />
+          </div>
+
+          <div class="input-group">
+            <label for="imageWidth">Width (px)</label>
+            <input type="number" id="imageWidth" value="1080" min="1" />
+          </div>
+
+          <div class="input-group">
+            <label for="imageHeight">Height (px)</label>
+            <input type="number" id="imageHeight" value="1920" min="1" />
+          </div>
+
+          <button id="downloadBtn">Download</button>
+        </div>
+
+        <div class="preview-panel">
+          <div id="previewContainer">
+            <div class="canvas-wrapper">
+              <canvas id="gridCanvas"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
